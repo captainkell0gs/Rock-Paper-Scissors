@@ -8,4 +8,10 @@ function getComputerChoice() {
         return "scissors";
     }
 }
-console.log(getComputerChoice());
+
+function getHumanChoice() {
+        const humanChoice = prompt("Please enter your choice: rock, paper, or scissors").toLowerCase();
+        if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
+            return humanChoice;
+        }
+}
